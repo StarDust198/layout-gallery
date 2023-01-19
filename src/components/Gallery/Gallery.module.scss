@@ -1,1 +1,28 @@
-.gallery {}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+	gap: 1.5rem;
+	// grid-auto-rows: minmax(18rem, auto);
+}
+
+.thumb {
+	display: block;
+	transition: all 0.5s ease-in-out;
+	border-radius: 0.125rem;
+	overflow: hidden;
+	// position: relative;
+	// box-shadow: ;
+	img {
+		width: 100%;
+	}
+	&.light {
+		filter: brightness(.75);
+	}
+	&:hover {
+		transform: scale(1.05);
+		filter: brightness(1.3);
+	}
+	&.light:hover {
+		filter: brightness(1);
+	}
+}
