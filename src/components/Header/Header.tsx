@@ -5,7 +5,7 @@ interface HeaderProps {}
 
 export const Header = ({}: HeaderProps) => (
   <div className={styles.header}>
-    <div className={styles.logo}>layout gallery</div>
+    <div className={styles.logo}>layout examples</div>
     <ThemeSwitcher />
   </div>
 );
